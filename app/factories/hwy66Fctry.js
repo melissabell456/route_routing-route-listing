@@ -2,5 +2,18 @@
 
 angular.module("HighwayApp").factory("Hwy66Fctry", function($http, $q) {
 
-  return { };
+  const getHwy66Data = () => {
+    return $q((resolve, reject) => {
+      $http
+      .get("../../data/highways.json")
+      .then( (hwyData) => {
+        console.log(hwyData.data.highways);
+        resolve(hwyData.data.highways);
+      })
+      .catch((err) => {
+        reject(err);
+      });
+    });
+  };
+  return { getHwy66Data };
 });
