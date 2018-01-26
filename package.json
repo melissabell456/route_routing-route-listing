@@ -1,0 +1,32 @@
+{
+  "name": "route-routing",
+  "version": "1.0.0",
+  "description": "For this exercise, you're going to create a basic application, with a two views. Each view will provide information about a famous American highway. Each will have a title show the name of the highway, and an element in which the description of the highway will be displayed.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melissabell456/route_routing-route-listing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melissabell456/route_routing-route-listing/issues"
+  },
+  "homepage": "https://github.com/melissabell456/route_routing-route-listing#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-angular-builder": "^1.0.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "matchdep": "^2.0.0"
+  },
+  "dependencies": {
+        "angular": "^1.6.8",
+        "angular-route": "^1.6.8"
+  }
+}

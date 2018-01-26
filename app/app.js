@@ -3,7 +3,7 @@
 angular.module("HighwayApp", ["ngRoute"])
 .config($routeProvider => {
   $routeProvider
-  .when("/blueRidgePkwy", {
+  .when("/:blueRidgePkwy", {
     templateUrl: "../partials/blueRidgePkwy.html",
     controller: "BlueRidgeCtrl"
   })
@@ -11,5 +11,5 @@ angular.module("HighwayApp", ["ngRoute"])
     templateUrl: "../partials/hwy66.html",
     controller: "Hwy66Ctrl"
   })
-  .otherwise("/")
-})
+  .otherwise("/");
+});

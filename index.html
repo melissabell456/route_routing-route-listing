@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Mushrooms</title>
+  <title>Highways</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.js"></script>
+  <script src="node_modules\angular\angular.min.js"></script>
+  <script src="node_modules/angular-route/angular-route.min.js"></script>
 
 </head>
 <body ng-app="HighwayApp">
@@ -15,10 +15,12 @@
   <div ng-include="'partials/header.html'"></div>
   <div ng-view></div>
 
-  <script src="app/app.js"></script>
+  <script src="dist/project.js"></script>
   <!-- factories -->
-  <!-- <script src="factories/mushroomFactory.js"></script> -->
-  <!-- controllers -->
-  <!-- <script src="controllers/mushroomCtrl.js"></script> -->
+  <!-- <script src="app/factories/blueRidgefctry.js"></script>
+  <script src="app/factories/hwy66Fctry.js"></script>
+  controllers
+  <script src="app/controllers/hwy66Ctrl.js"></script>
+  <script src="app/controllers/blueRidgeCtrl.js"></script>
 </body>
 </html>
