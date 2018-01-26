@@ -1,13 +1,11 @@
 "use strict";
 
-angular.module("HighwayApp").controller("BlueRidgeCtrl", function($scope, BlueRidgeFctry, $routeParams) {
-
+angular.module("HighwayApp").controller("BlueRidgeCtrl", function($scope, BlueRidgeFctry) {
 
   BlueRidgeFctry.getBlueRidgeData()
   .then( (data) => {
-    console.log(data);
-    $scope.hwy = data.filter( hway => hway.abbrev === `${$routeParams}`);
-    console.log($scope.hwy);
+    $scope.hwyObj = data.filter( hway => hway.abbrev === "blueRidgePkwy");
+    console.log($scope.hwyObj);
   });
 
 });
