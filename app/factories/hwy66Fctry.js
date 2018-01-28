@@ -7,7 +7,6 @@ angular.module("HighwayApp").factory("Hwy66Fctry", function($http, $q) {
       $http
       .get("../../data/highways.json")
       .then( (hwyData) => {
-        console.log(hwyData.data.highways);
         resolve(hwyData.data.highways);
       })
       .catch((err) => {

@@ -10,7 +10,6 @@ angular.module("HighwayApp").factory("BlueRidgeFctry", function ($http, $q) {
         resolve(hwyData.data.highways);
       })
       .catch((err) => {
-        // console.log(err);
         reject(err);
       });
     });
