@@ -4,8 +4,9 @@ angular.module("HighwayApp").controller("BlueRidgeCtrl", function($scope, BlueRi
 
   BlueRidgeFctry.getBlueRidgeData()
   .then( (data) => {
-    $scope.hwyObj = data.filter( hway => hway.abbrev === "blueRidgePkwy");
-    console.log($scope.hwyObj);
+    // searching array to return only Blue Ridge data for display
+    $scope.blueRidge = data.filter( hway => hway.abbrev === "blueRidgePkwy");
+    console.log($scope.blueRidge);
   });
 
 });
